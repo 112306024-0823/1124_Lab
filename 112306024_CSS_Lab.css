@@ -1,15 +1,81 @@
+body {
+    color: #333;
+    /* Set your desired text color */
+    background-color: #f0f0f0;
+    /* Set your desired background color */
+    font-family: 'Arial', sans-serif;
+    /* Set your desired font family for the body */
+}
+
+h1 {
+    color: #007bff;
+    font-size: 50px;
+    text-align: center;
+    letter-spacing: 1px;
+    padding: 10px;
+}
+
+.dropdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-family: 'Times New Roman', serif;
+    /* Set your desired font family for the heading */
+}
+
+ul.navbar {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    width: 200px;
+}
+
+<div class="btn-group"><button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Action </button><ul class="dropdown-menu"><li><a class="dropdown-item" href="#">Action</a></li><li><a class="dropdown-item" href="#">Another action</a></li><li><a class="dropdown-item" href="#">Something else here</a></li><li><hr class="dropdown-divider"></li><li><a class="dropdown-item" href="#">Separated link</a></li></ul></div>ul.navbar li {
+    list-style: none;
+    margin: 0;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+}
+
+ul.navbar li:hover {
+    background-color: #f9f9f9;
+}
+
+ul.navbar .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+ul.navbar .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+ul.navbar .dropdown:hover .dropdown-content {
+    display: block;
+}
+
 .kv {
     width: 100%;
     text-align: center;
     height: 98vh;
     background-image: url(https://images.unsplash.com/photo-1700675654221-d9c62be751c8?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
     background-size: cover;
-    transition: opacity 0.5s ease;
+    transition: opacity 0.2s ease;
     /* Add transition effect */
 }
 
 .kv:hover {
-    opacity: 0.7;
+    opacity: 0.;
     /* Make the image semi-transparent on hover */
 }
 
@@ -43,25 +109,4 @@
 .kv .text p {
     color: yellow;
     font-size: 20px;
-}
-
-.navbar {
-    background-color: #61727d;
-    padding: 10px 0;
-    border-radius: 0;
-}
-
-.navbar-brand,
-.navbar-nav .nav-link {
-    color: #fff !important;
-}
-
-.navbar-brand:hover,
-.navbar-nav .nav-link:hover {
-    color: #ecf0f1 !important;
-}
-
-.navbar-nav .active a {
-    color: #f39c12 !important;
-    /* Change color for active link */
 }
