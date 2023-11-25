@@ -1,0 +1,67 @@
+.kv {
+    width: 100%;
+    text-align: center;
+    height: 98vh;
+    background-image: url(https://images.unsplash.com/photo-1700675654221-d9c62be751c8?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    transition: opacity 0.5s ease;
+    /* Add transition effect */
+}
+
+.kv:hover {
+    opacity: 0.7;
+    /* Make the image semi-transparent on hover */
+}
+
+.kv::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.kv .text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.kv .text h1 {
+    color: white;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 50px;
+    text-decoration: underline
+}
+
+.kv .text p {
+    color: yellow;
+    font-size: 20px;
+}
+
+.navbar {
+    background-color: #61727d;
+    padding: 10px 0;
+    border-radius: 0;
+}
+
+.navbar-brand,
+.navbar-nav .nav-link {
+    color: #fff !important;
+}
+
+.navbar-brand:hover,
+.navbar-nav .nav-link:hover {
+    color: #ecf0f1 !important;
+}
+
+.navbar-nav .active a {
+    color: #f39c12 !important;
+    /* Change color for active link */
+}
