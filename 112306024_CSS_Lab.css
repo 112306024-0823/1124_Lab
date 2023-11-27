@@ -110,3 +110,39 @@ ul.navbar .dropdown:hover .dropdown-content {
     color: yellow;
     font-size: 20px;
 }
+
+@media all {
+    /* Additional styles for all devices go here */
+}
+
+/* Media Type: Print */
+@media print {
+    body {
+        background: none; /* Remove background image for printing */
+    }
+
+    h1 {
+        color: black;
+        /* Change heading color to black for print */
+    }
+
+    .kv {
+        background: none;
+        /* Remove background image for print */
+    }
+
+    .kv::before {
+        display: none;
+        /* Remove background overlay for print */
+    }
+
+    .kv .text h1 {
+        text-decoration: underline;
+        /* Add underline for print */
+    }
+
+    .kv .text p {
+        color: black;
+        /* Change paragraph color to black for print */
+    }
+}
