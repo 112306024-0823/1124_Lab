@@ -14,9 +14,27 @@ h1 {
 }
 
 ul.navbar {
+    position: relative;
+    top: 1em;
+    left: 1em;
+    width: 300em;
     display: flex;
     list-style-type: none;
     padding: 0;
+}
+
+@media screen and (max-width: 600px) {
+    ul.navbar {
+        width: 100%;
+        flex-direction: column;
+        /* Stack items vertically on smaller screens */
+    }
+
+    .dropdown-item {
+        width: 100%;
+        margin-bottom: 10px;
+        /* Add spacing between stacked items */
+    }
 }
 
 .dropdown-item {
